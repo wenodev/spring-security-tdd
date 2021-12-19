@@ -24,7 +24,9 @@ class UserRepositoryTest {
         User user = new User(1L, EMAIL, PASSWORD);
         given(userRepository.findAll()).willReturn(List.of(user));
 
-        assertThat(user.getEmail()).isEqualTo(EMAIL);
+        List<User> users = userRepository.findAll();
+
+        assertThat(users.size()).isEqualTo(1);
     }
 
 }
