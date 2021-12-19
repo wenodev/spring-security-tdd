@@ -3,11 +3,14 @@ package com.example.springsecuritytdd.security;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.core.Authentication;
 
 import java.security.Key;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@SpringBootTest
 public class TokenProviderTest {
 
     String secretKey = "wenosecretwenosecretwenosecretwenosecretwenosecretwenosecretwenosecret";
