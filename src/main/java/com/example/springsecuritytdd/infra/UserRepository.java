@@ -1,4 +1,7 @@
 package com.example.springsecuritytdd.infra;
 
-public interface UserRepository {
+import com.example.springsecuritytdd.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
