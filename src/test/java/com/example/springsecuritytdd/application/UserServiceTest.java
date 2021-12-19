@@ -2,6 +2,7 @@ package com.example.springsecuritytdd.application;
 
 
 import com.example.springsecuritytdd.domain.User;
+import com.example.springsecuritytdd.infra.UserRepository;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
