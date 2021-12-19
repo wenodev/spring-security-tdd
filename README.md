@@ -15,3 +15,14 @@
 ### 관리자
 - 회원 가입된 모든 회원 정보 조회
 - 일별로 회원가입 한 숫자 통계
+
+
+## Udacity Git Commit Message Style Guide
+[udacity 보러가기](https://udacity.github.io/git-styleguide/)   
+feat: A new feature   
+fix: A bug fix   
+docs: Changes to documentation   
+style: Formatting, missing semi colons, etc; no code change   
+refactor: Refactoring production code   
+test: Adding tests, refactoring test; no production code change   
+chore: Updating build tasks, package manager configs, etc; no production code change   
