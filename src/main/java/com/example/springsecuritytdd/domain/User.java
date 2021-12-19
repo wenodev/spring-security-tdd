@@ -1,4 +1,4 @@
-package com.example.springsecuritytdd;
+package com.example.springsecuritytdd.domain;
 
 public class User {
 
