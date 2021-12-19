@@ -19,7 +19,7 @@ public class TokenProviderTest {
         byte[] keyByte = Decoders.BASE64.decode(secretKey);
         Key key = Keys.hmacShaKeyFor(keyByte);
 
-        assertThat(keyByte.length).isEqualTo(key.getEncoded().length);
+        assertThat(tokenProvider.getKey().getEncoded()).isEqualTo(key.getEncoded());
     }
 
 }
