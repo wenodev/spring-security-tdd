@@ -35,7 +35,7 @@ public class AuthControllerTest {
         ResultActions perform = mockMvc.perform(post("/signup"));
 
         // 과정
-        perform.andExpect(status().isCreated());
+        perform.andExpect(status().isOk());
     }
 
 }
