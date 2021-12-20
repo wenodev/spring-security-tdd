@@ -26,3 +26,8 @@ style: Formatting, missing semi colons, etc; no code change
 refactor: Refactoring production code   
 test: Adding tests, refactoring test; no production code change   
 chore: Updating build tasks, package manager configs, etc; no production code change   
+
+
+## 알게된 점
+### WebSecurityConfigurerAdapter
+WebSecurityConfigurerAdapter를 상속받는 클래스는 모든 요청을 거치기 때문에 주입 받은 객체들은 테스트 할때 주입 받아야 한다.   
