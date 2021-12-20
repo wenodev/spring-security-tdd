@@ -32,7 +32,7 @@ public class AuthControllerTest {
         // 준비
 
         // 실행
-        ResultActions perform = mockMvc.perform(post("/signup"));
+        ResultActions perform = mockMvc.perform(post("/si"));
 
         // 과정
         perform.andExpect(status().isOk());
