@@ -1,0 +1,50 @@
+# 내 정보 확인 실패
+GET http://localhost:8080/me
+Content-Type: application/json
+
+{
+  "email": "juwon@weno.com",
+  "password": "1234"
+}
+
+###
+# 회원가입
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "email": "juwon@weno.com",
+  "password": "1234"
+}
+
+
+###
+#로그인
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "juwon@weno.com",
+  "password": "1234"
+}
+
+###
+# 내 정보 확인
+GET http://localhost:8080/me
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTYzOTk5MTczMn0.av4peS9-8hKK9oGSIqNd-Xq1UmbzAP2nOaVDyw3mXEfc2qR7yWZFP7UZMwXYegSJGgGE60Zcob8BPtLy_iyjPA
+Content-Type: application/json
+
+{
+  "email": "juwon@weno.com",
+  "password": "1234"
+}
+###
+# 전체 회원 조회
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTYzOTk5MTczMn0.av4peS9-8hKK9oGSIqNd-Xq1UmbzAP2nOaVDyw3mXEfc2qR7yWZFP7UZMwXYegSJGgGE60Zcob8BPtLy_iyjPA
+Content-Type: application/json
+
+{
+"email": "juwon@weno.com",
+"password": "1234"
+}

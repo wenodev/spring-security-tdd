@@ -21,7 +21,11 @@ public class UserServiceTest {
     @Test
     void getUsers_메소드는_모든_회원을_리턴한다(){
         // 준비
-        User user = new User(1L, EMAIL, PASSWORD);
+        User user = User.builder()
+                .id(1L)
+                .email(EMAIL)
+                .password(PASSWORD)
+                .build();
         given(userRepository.findAll()).willReturn(List.of(user));
 
         // 실행

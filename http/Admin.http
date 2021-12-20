@@ -1,0 +1,15 @@
+###
+#로그인
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "1234"
+}
+
+###
+# 전체 회원 조회
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE2Mzk5OTMxOTZ9.fuwbyh_weDryOTZxD7j8btGGDW1SIo_5bIY_K3nok9hpbkGF9nQP6dJCzgnt57ObnECG1CpBxY9eqmFdrcO1Pg
+Content-Type: application/json

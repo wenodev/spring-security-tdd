@@ -16,8 +16,19 @@ public class UserController {
         this.userService = userService;
     }
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "hello every one!";
+    }
+
+    @GetMapping("/me")
+    public User getMyMemberInfo() {
+        return userService.getMyInfo();
+    }
+
     @GetMapping("/users")
     public List<User> getUsers(){
         return userService.getUsers();
     }
+
 }

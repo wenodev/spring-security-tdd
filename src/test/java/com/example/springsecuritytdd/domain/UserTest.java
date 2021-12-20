@@ -9,7 +9,10 @@ public class UserTest {
     private final String EMAIL = "juwon@weno.com";
     private final String PASSWORD = "1234";
 
-    User user = new User(EMAIL, PASSWORD);
+    User user = User.builder()
+            .email(EMAIL)
+            .password(PASSWORD)
+            .build();
 
     @Test
     void 유저는_이메일과_비밀번호가_있어야한다(){

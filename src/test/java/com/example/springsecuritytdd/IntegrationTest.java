@@ -25,7 +25,12 @@ class IntegrationTest {
 
     @BeforeEach
     void setUp(){
-        userRepository.save( new User(1L, EMAIL, PASSWORD));
+        userRepository.save(User.builder()
+                .id(1L)
+                .email(EMAIL)
+                .password(PASSWORD)
+                .build()
+        );
     }
 
     @Test

@@ -21,7 +21,13 @@ class UserRepositoryTest {
 
     @Test
     void 모든_회원을_조회한다(){
-        User user = new User(1L, EMAIL, PASSWORD);
+        
+        User user = User.builder()
+                .id(1L)
+                .email(EMAIL)
+                .password(PASSWORD)
+                .build();
+
         given(userRepository.findAll()).willReturn(List.of(user));
 
         List<User> users = userRepository.findAll();
