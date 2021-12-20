@@ -1,6 +1,5 @@
 package com.example.springsecuritytdd.domain;
 
-import com.example.springsecuritytdd.domain.User;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

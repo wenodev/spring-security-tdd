@@ -1,4 +1,4 @@
-package com.example.springsecuritytdd.security;
+package com.example.springsecuritytdd.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
